@@ -1,0 +1,311 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	display: block;
+}
+
+header{
+	background: #B0E0E6;
+	overflow: hidden;
+	position: relative;
+	padding: 15px;
+}
+
+header .logo{
+	display: block;
+	max-width: 150px;
+	width: 100%;
+	float: left;
+}
+
+.logo img{
+	width: 100%;
+}
+
+header nav{
+	float: right;
+	background: #90EE90;
+	margin: 39px 0;
+	font-size: 17px
+}
+
+header nav li{
+	display: inline-block;
+	padding: 10px; 
+}
+
+header nav li a{
+	text-decoration: none; 
+	color: #191970;
+}
+
+header nav li:hover{
+	background: white; 
+	font-size: 24px;
+}
+
+header nav li:hover a{
+	color: green;
+}
+
+main{
+	margin-top: 20px;
+	padding-bottom: 63px;
+	margin-bottom: 20px;
+	background: gold; 
+}
+
+.wrapp{
+	min-height: calc(100vh - 210px);
+}
+
+.content{
+	background: olivedrab;
+	max-width: 1200px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+footer{
+	background: #A0E0E1;
+	height: 210px;
+}
+
+
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 13px 3px 0px 5px; /* Отступы вокруг картинки */
+   }
+.leftimg2 {
+    float:right; /* Выравнивание по левому краю */
+    margin: 13px 2px 0px 10px; /* Отступы вокруг картинки */
+}
+
+p{
+    font-family: Snell Roundhand, cursive; /* Гарнитура шрифта основного текста */
+    font-size: 90%; /* Размер шрифта */
+   }
+
+P:first-letter {
+    font-family: "Times New Roman", Times, serif; /* Гарнитура шрифта первой буквы */
+    font-size: 200%; /* Размер шрифта первого символа */
+    color: red; /* Красный цвет текста */
+}  
+
+footer .logo{
+	display: block;
+	max-width: 150px;
+	width: 100%;
+	float: left;
+	margin: 30px 1px 2px 30px;
+}
+p img{
+	width:400px;
+	height:300px;
+}
+
+footer li{
+	display: block;
+	padding-bottom: 8px;
+}
+footer ul{
+	padding-top: 20px;
+	padding-bottom: 25px;
+	float: right;
+	margin: 30px 90px;
+}
+footer img{
+	float: right;
+	height: inherit;
+}
+
+
+@media (min-width: 1070px){
+	.wrap {
+	    padding-bottom: 20px;
+	}
+}
+
+
+
+@media (max-width: 768px) and (orientation: portrait){
+	.wrap{
+		padding-bottom: 20px;
+	}
+
+	/*p img{
+		width:150%;
+		height: 150% 
+	}*/
+
+	.content img {
+    	max-width: 170px;
+    }
+
+	footer{
+		display:block;
+		width:100%;
+		align-self: center;
+	}
+	footer, header{
+		text-align: center;
+	}
+
+	footer{
+		display:block;
+		width:100%;
+		align-self: center;
+	}
+}
+
+@media (max-width: 1024px) and (orientation: landscape){
+
+	.wrap{
+		padding-bottom: 20px;
+	}
+
+	footer{
+		display:block;
+		width:100%;
+		align-self: center;
+	}
+	footer, header{
+		text-align: center;
+	}
+
+	footer{
+		display:block;
+		width:100%;
+		align-self: center;
+	}
+
+}
+
+
+@media (max-width: 375px)  and (orientation: portrait){
+
+	.wrap {
+	 	padding-bottom: 20px;
+	}
+
+	.content{
+		padding: 35px 20px;
+		font-size: 14px;
+	}
+
+	main{
+		margin: 10px 0;
+	}
+
+	/*p img{
+		width:150%;
+		height: 150% 
+	}
+
+	.content img {
+    	max-width: 170px;
+    }
+
+	header .logo{
+		margin: 0 0 0 90px; 
+	}
+
+	footer{
+		display:block;
+		width:100%;
+		align-self: center;
+	}
+	footer, header{
+		text-align: center;
+	}
+
+	footer{
+		display:block;
+		width:100%;
+		align-self: center;
+	}
+	footer .logo{
+		display: none;
+	}
+
+}
+
+@media (max-width: 375px)  and (orientation: landscape){
+
+	.wrap {
+	 	padding-bottom: 20px;
+	}
+
+	.content{
+		padding: 35px 20px;
+		font-size: 14px;
+	}
+
+	main{
+		margin: 10px 0;
+	}
+
+	.content img {
+    	max-width: 170px;
+    }
+
+	header .logo{
+		margin: 0 0 0 90px; 
+	}
+
+	footer{
+		display:block;
+		width:100%;
+		align-self: center;
+	}
+	footer, header{
+		text-align: center;
+	}
+
+	footer{
+		display:block;
+		width:100%;
+		align-self: center;
+	}
+	footer .logo{
+		display: none;
+	}
+
+}
+
+@media (max-width: 812px)  and (orientation: landscape){
+
+	.wrap {
+	 	padding-bottom: 20px;
+	}
+
+	.content{
+		padding: 35px 20px;
+		font-size: 14px;
+	}
+
+	.content img {
+    	max-width: 170px;
+    }
+
+	main{
+		margin: 10px 0;
+	}
+	footer{
+		display:block;
+		width:100%;
+		align-self: center;
+	}
+	footer, header{
+		text-align: center;
+	}
+
+	footer{
+		display:block;
+		width:100%;
+		align-self: center;
+	}
+}
